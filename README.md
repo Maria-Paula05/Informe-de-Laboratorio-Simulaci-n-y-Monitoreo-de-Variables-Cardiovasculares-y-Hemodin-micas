@@ -188,8 +188,6 @@ Insertar aquí imagen de la onda.
 
 Se configuró el límite inferior de alarma de SpO₂ en:
 
-```text
-90 %
 ## Paso 7: Simulación de hipoxia
 
 Se configuró el simulador con los siguientes valores:
