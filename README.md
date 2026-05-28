@@ -272,9 +272,6 @@ Se configuró el simulador OxSim para simular una condición de bradicardia con 
 Se observó la forma de onda fotopletismográfica visualizada en el monitor uMEC 100.
 
 **Observación:** La onda fotopletismográfica presentó una morfología regular, con picos bien definidos, amplitud estable y ausencia de ruido visible. La frecuencia de la onda fue coherente con los 40 BPM simulados.
-
-**Imagen o captura:** *(Insertar aquí imagen de la onda — ver Anexo B)*
-
 ---
 
 ## Paso 6: Configuración de alarma de SpO₂ baja
@@ -451,20 +448,6 @@ Donde:
 | SpO₂ alta | 97 % | 100 % | Sí | Sí | ~5 s |
 | Taquicardia | 120 BPM | 140 BPM | Sí | Sí | ~5 s |
 
-> **Nota:** Complementar con evidencia visual o sonora registrada durante la práctica (ver Anexo C).
-
----
-
-## 8.5 Resultados visuales
-
-*(Insertar imágenes o capturas de los siguientes elementos en los anexos correspondientes)*
-
-- Conexión del sensor de SpO₂ al simulador — ver Anexo A.
-- Pantalla del monitor uMEC 100 — ver Anexo A.
-- Onda fotopletismográfica en condición normal — ver Anexo B.
-- Onda fotopletismográfica en baja perfusión — ver Anexo B.
-- Alarmas visuales o sonoras activadas — ver Anexo C.
-
 ---
 
 # 9. Análisis de resultados
@@ -537,19 +520,7 @@ Ante una señal pulsátil de baja amplitud, el algoritmo del pulsioxímetro pued
 
 # 14. Anexos
 
-## Anexo A. Registro fotográfico
-
-*(Insertar aquí imágenes del montaje experimental: conexión del sensor OX-1 al monitor, pantalla del uMEC 100 durante las simulaciones)*
-
-## Anexo B. Capturas de onda fotopletismográfica
-
-*(Insertar aquí capturas de la onda PPG observada en el monitor en condición normal y en condición de baja perfusión)*
-
-## Anexo C. Evidencia de alarmas
-
-*(Insertar aquí imágenes o registros de la activación de alarmas visuales y sonoras para SpO₂ baja, SpO₂ alta y taquicardia)*
-
-## Anexo D. Cálculos detallados
+## Anexo A. Cálculos detallados
 
 ### Ejemplo: Punto 3 de RPM (referencia 10,0 RPM)
 
@@ -614,4 +585,3 @@ s = √[ (1,44 + 1,44 + 1,44 + 23,04 + 1,44) / 4 ]
 uA = 2,68 / √5 = 2,68 / 2,236 ≈ 1,20 BPM
 ```
 
-*(No se calcula error de indicación en este punto por ausencia de valor de referencia disponible)*
