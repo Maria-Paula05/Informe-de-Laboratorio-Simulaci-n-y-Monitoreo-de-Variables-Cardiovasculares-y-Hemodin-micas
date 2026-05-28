@@ -1,22 +1,13 @@
 
 # Simulación y Monitoreo de Variables Cardiovasculares y Hemodinámicas
 
-**Universidad Militar Nueva Granada**
-**Facultad:** Ingeniería
-**Programa:** Ingeniería Biomédica
-**Asignatura:** Instrumentación Biomédica y Biosensores
-**Semestre:** VII
-
 ---
 
 ## Integrantes
 
 - María Paula Fernández
-- Nombre del integrante 2
-- Nombre del integrante 3
-
-**Docente:** Nombre del docente
-**Fecha:** Día / Mes / Año
+- Juan Pablo Díaz Rocha
+- Jhonathan David Guevara
 
 ---
 
