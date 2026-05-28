@@ -22,14 +22,111 @@
 
 ## 1. Introducción
 
-El monitoreo de variables fisiológicas es una actividad fundamental dentro del entorno clínico, ya que permite observar el estado del paciente en tiempo real y detectar condiciones que puedan representar riesgo. Entre las variables más comunes monitoreadas se encuentran la frecuencia cardíaca, conocida como **HR** o **BPM**, y la saturación periférica de oxígeno, conocida como **SpO₂**.
+El monitoreo de variables fisiológicas es una actividad fundamental dentro del entorno clínico, ya que permite observar el estado del paciente en tiempo real y apoyar la detección temprana de condiciones que puedan representar riesgo. Entre las variables más comunes monitoreadas se encuentran la frecuencia cardíaca, expresada como **HR** o **BPM**, la saturación periférica de oxígeno, conocida como **SpO₂**, y la frecuencia respiratoria, expresada como **RPM**. Estas variables hacen parte de los signos vitales utilizados para valorar el estado fisiológico general de un paciente; por ejemplo, en adultos sanos en reposo, la frecuencia cardíaca suele encontrarse entre 60 y 100 latidos por minuto y la frecuencia respiratoria entre 12 y 18 respiraciones por minuto. :contentReference[oaicite:1]{index=1}
 
-Los monitores de signos vitales permiten visualizar estas variables y generar alarmas cuando los valores se encuentran por fuera de rangos fisiológicos esperados. Para verificar que estos equipos funcionen correctamente, se utilizan simuladores biomédicos capaces de recrear señales fisiológicas bajo condiciones normales y anormales.
+Los monitores de signos vitales son equipos biomédicos diseñados para visualizar variables fisiológicas y emitir alarmas cuando los valores se encuentran por fuera de rangos configurados o fisiológicamente esperados. Por esta razón, su desempeño debe verificarse de forma periódica, ya que una indicación incorrecta puede afectar la interpretación clínica, el seguimiento del paciente y la toma de decisiones médicas. En este contexto, la verificación metrológica permite comparar las indicaciones del equipo bajo prueba contra valores de referencia generados por simuladores biomédicos, evaluando así la exactitud, repetibilidad y comportamiento funcional del sistema de medición.
 
-En esta práctica se empleó el simulador de parámetros hemodinámicos **Pronk OxSim OX-1** junto con el monitor de signos vitales **Mindray uMEC 100**, con el fin de evaluar la respuesta del monitor ante diferentes escenarios simulados, tales como bradicardia, hipoxia, baja perfusión y taquicardia. Además, se analizaron los errores entre los valores simulados y los valores medidos por el monitor.
+En el presente informe se analiza la verificación metrológica y funcional del monitor de signos vitales **Mindray uMEC 100**, realizada mediante comparación de sus indicaciones frente a valores simulados de **BPM**, **SpO₂** y **RPM**. Según el certificado de verificación, el equipo evaluado corresponde a un monitor de signos vitales Mindray, modelo **uMEC 100**, y las pruebas fueron realizadas el **30 de abril de 2026**, bajo condiciones ambientales de **22,7 °C** de temperatura y **49,0 %** de humedad relativa. Para la verificación se utilizaron como instrumentos de referencia el simulador de pulsioximetría **Pronk Technologies OX-1** y el **SimCube NIBP Simulator SC-5**. :contentReference[oaicite:2]{index=2}
+
+La práctica se enfocó en comparar los valores simulados con las lecturas indicadas por el monitor, registrando mediciones repetidas cada 10 segundos. A partir de estos datos se calcularon promedios, desviación estándar experimental, error de indicación e incertidumbre tipo A de la media. Este procedimiento permite evaluar si el monitor responde de manera consistente frente a señales simuladas y si sus indicaciones son adecuadas para el uso clínico previsto. La evaluación de incertidumbre tipo A se fundamenta en el análisis estadístico de observaciones repetidas, mediante la media y la desviación estándar de la media. :contentReference[oaicite:3]{index=3}
+
+De esta manera, el informe no solo describe los resultados obtenidos, sino que también resalta la importancia de la metrología biomédica en la seguridad del paciente, la confiabilidad diagnóstica y la gestión tecnológica hospitalaria. Un monitor de signos vitales no debe considerarse seguro únicamente porque enciende o muestra valores en pantalla; también debe demostrar que sus mediciones son coherentes, repetibles y trazables frente a patrones o simuladores adecuados.
 
 ---
 
+## 3. Marco teórico
+
+### 3.1 Verificación metrológica en equipos biomédicos
+
+La metrología es la ciencia de las mediciones y sus aplicaciones. En el ámbito biomédico, permite evaluar si un equipo médico mide correctamente, si sus indicaciones son confiables y si se encuentra en condiciones adecuadas para su uso clínico. El Vocabulario Internacional de Metrología establece conceptos fundamentales relacionados con medición, error, incertidumbre, trazabilidad y verificación, los cuales son aplicables tanto a mediciones físicas como químicas, biológicas, médicas e ingenieriles. :contentReference[oaicite:4]{index=4}
+
+En equipos biomédicos como los monitores de signos vitales, la verificación metrológica consiste en comparar las lecturas del equipo bajo prueba con valores conocidos o simulados. Esta comparación permite determinar el error de indicación, la repetibilidad de las lecturas y la estabilidad del equipo frente a diferentes puntos de medición.
+
+En el certificado analizado, la verificación consistió en comparar las indicaciones del monitor **Mindray uMEC 100** frente a señales simuladas de frecuencia cardíaca, saturación de oxígeno y frecuencia respiratoria. Las lecturas fueron tomadas cada 10 segundos, con cinco observaciones por punto cuando la serie fue legible y completa. Además, se indica que no se aplicaron correcciones ni ajustes al equipo bajo prueba. :contentReference[oaicite:5]{index=5}
+
+---
+
+### 3.2 Monitor de signos vitales
+
+Un monitor de signos vitales es un equipo biomédico utilizado para visualizar variables fisiológicas del paciente, tales como frecuencia cardíaca, saturación de oxígeno, presión arterial, frecuencia respiratoria y temperatura. Estos equipos son fundamentales en áreas como hospitalización, urgencias, salas de cirugía, unidades de cuidado intensivo y consulta externa.
+
+El monitor **Mindray uMEC 100** evaluado en este informe fue sometido a verificación funcional y metrológica mediante comparación con simuladores biomédicos. Según el certificado, el equipo bajo prueba corresponde a un monitor de signos vitales marca **Mindray**, modelo **uMEC 100**, identificado con serie **FT4-4C015042** y activo institucional **210000001-5767**. :contentReference[oaicite:6]{index=6}
+
+La función principal de este tipo de monitor es mostrar de manera continua o periódica las variables fisiológicas del paciente y generar alertas cuando los valores se encuentran por fuera de los límites configurados. Por lo tanto, la confiabilidad de sus mediciones es esencial para evitar interpretaciones erróneas o decisiones clínicas inadecuadas.
+
+---
+
+### 3.3 Frecuencia cardíaca / BPM
+
+La frecuencia cardíaca corresponde al número de contracciones del corazón por minuto y se expresa en **BPM**. Este parámetro permite evaluar la actividad cardíaca del paciente y detectar alteraciones como bradicardia o taquicardia. En adultos sanos en reposo, una frecuencia cardíaca normal suele encontrarse entre **60 y 100 BPM**. :contentReference[oaicite:7]{index=7}
+
+En el contexto metrológico, la frecuencia cardíaca puede simularse mediante equipos patrón o simuladores biomédicos. En el certificado de verificación, se evaluaron varios puntos de BPM, incluyendo valores de **40 BPM**, **70 BPM**, **80 BPM**, **95 BPM** y **140 BPM**. En la mayoría de los puntos evaluados, las indicaciones del monitor coincidieron con el valor simulado, presentando error de **0,00 BPM** y desviación estándar de **0,00 BPM**. :contentReference[oaicite:8]{index=8}
+
+Estos resultados sugieren que, para los puntos evaluados, el monitor presentó una respuesta estable y repetible en la medición de frecuencia cardíaca. Sin embargo, en el punto asociado a condición de apnea se registraron lecturas variables de **69,0 BPM** y **75,0 BPM**, con promedio de **70,2 BPM**, desviación estándar de **2,68 BPM** e incertidumbre tipo A de **1,20 BPM**. :contentReference[oaicite:9]{index=9}
+
+---
+
+### 3.4 Saturación periférica de oxígeno / SpO₂
+
+La saturación periférica de oxígeno, o **SpO₂**, representa una estimación no invasiva del porcentaje de hemoglobina saturada con oxígeno en sangre arterial periférica. Los pulsioxímetros utilizan haces de luz para estimar la saturación de oxígeno y la frecuencia del pulso, generalmente mediante un sensor colocado en el dedo u otra zona periférica. :contentReference[oaicite:10]{index=10}
+
+La medición de SpO₂ es importante porque permite identificar posibles alteraciones en la oxigenación del paciente. En condiciones clínicas habituales, valores cercanos a **95 % - 100 %** suelen considerarse esperados en sujetos sanos, aunque la interpretación siempre debe realizarse de acuerdo con el contexto clínico del paciente.
+
+En la verificación realizada al monitor **uMEC 100**, se evaluaron puntos de saturación de oxígeno de **85 %**, **95 %**, **98 %** y **100 %**. Para todos los puntos registrados, las indicaciones del monitor coincidieron con el valor simulado, obteniéndose promedio igual al valor de referencia, desviación estándar de **0,00 %**, error de **0,00 %** e incertidumbre tipo A de **0,00 %**. :contentReference[oaicite:11]{index=11}
+
+Estos resultados indican una alta concordancia entre los valores simulados por el Pronk OX-1 y las indicaciones del monitor en los puntos evaluados de SpO₂.
+
+---
+
+### 3.5 Pulsioximetría
+
+La pulsioximetría es una técnica óptica no invasiva utilizada para estimar la saturación periférica de oxígeno y la frecuencia del pulso. Su principio de funcionamiento se basa en la absorción diferencial de luz roja e infrarroja por parte de la hemoglobina oxigenada y desoxigenada. A partir de esta diferencia de absorción, el equipo calcula la saturación de oxígeno. :contentReference[oaicite:12]{index=12}
+
+El sensor de pulsioximetría detecta variaciones periódicas asociadas al pulso sanguíneo. Estas variaciones permiten obtener la señal fotopletismográfica, la cual es utilizada para estimar tanto la frecuencia cardíaca como la SpO₂. Factores como baja perfusión, movimiento, mala colocación del sensor, interferencias ópticas o baja amplitud de pulso pueden afectar la calidad de la señal y, por tanto, la confiabilidad de la lectura.
+
+En la práctica, el simulador **Pronk Technologies OX-1** fue utilizado para generar valores de SpO₂ y BPM asociados a pulsioximetría, permitiendo evaluar la respuesta del monitor frente a señales controladas. :contentReference[oaicite:13]{index=13}
+
+---
+
+### 3.6 Señal fotopletismográfica
+
+La señal fotopletismográfica corresponde a la variación de volumen sanguíneo detectada ópticamente en un tejido durante el ciclo cardíaco. Esta señal es la base de la pulsioximetría, ya que permite identificar el componente pulsátil de la sangre arterial y estimar variables como frecuencia cardíaca y saturación periférica de oxígeno.
+
+Una señal fotopletismográfica estable, con amplitud adecuada y baja presencia de ruido, favorece mediciones más confiables. Por el contrario, una señal distorsionada puede generar lecturas inestables o falsas alarmas. En condiciones de baja perfusión, la amplitud de la señal puede disminuir, dificultando la detección del pulso y afectando la estimación de la SpO₂.
+
+En el certificado se incluye un punto de SpO₂ con anotación de **“low perf”**, en el cual se registró un valor simulado de **100,0 %** y cinco indicaciones consecutivas de **100,0 %**, con error de **0,00 %** e incertidumbre tipo A de **0,00 %**. :contentReference[oaicite:14]{index=14}
+
+---
+
+### 3.7 Frecuencia respiratoria / RPM
+
+La frecuencia respiratoria corresponde al número de respiraciones por minuto y se expresa en **RPM**. Es una variable fisiológica importante para evaluar el estado ventilatorio del paciente. En adultos sanos en reposo, la frecuencia respiratoria suele encontrarse aproximadamente entre **12 y 18 respiraciones por minuto**. :contentReference[oaicite:15]{index=15}
+
+En la verificación del monitor uMEC 100 se evaluaron puntos de frecuencia respiratoria. Algunos puntos presentaron coincidencia completa entre el valor simulado y el valor indicado, como el punto de **40,0 RPM**, donde el promedio fue **40,0 RPM**, con error de **0,00 RPM** e incertidumbre tipo A de **0,00 RPM**. También se evaluó una condición de apnea de **0,0 RPM**, en la cual todas las indicaciones fueron **0,0 RPM**. :contentReference[oaicite:16]{index=16}
+
+Sin embargo, otros puntos mostraron variabilidad. En la serie registrada como **20/10**, las indicaciones fueron **20,0, 20,0, 10,0, 10,0 y 10,0 RPM**, con promedio de **14,0 RPM**, desviación estándar de **5,48 RPM** e incertidumbre tipo A de **2,45 RPM**. Además, en el punto de referencia de **10,0 RPM**, se registraron lecturas de **10,0, 10,0, 10,0, 20,0 y 10,0 RPM**, obteniendo promedio de **12,0 RPM**, error de **2,00 RPM** e incertidumbre tipo A de **2,00 RPM**. :contentReference[oaicite:17]{index=17}
+
+Estos resultados muestran que la frecuencia respiratoria presentó mayor variabilidad que BPM y SpO₂ en algunos puntos evaluados.
+
+---
+
+### 3.8 Error de indicación
+
+El error de indicación corresponde a la diferencia entre el valor indicado por el equipo bajo prueba y el valor de referencia o valor simulado. En términos generales, puede expresarse como:
+
+```text
+Error = Promedio de las indicaciones - Valor de referencia
+```
+
+### 3.9 Repetibilidad, desviación estándar e incertidumbre tipo A
+
+La repetibilidad se relaciona con la capacidad del equipo para entregar resultados similares cuando se mide el mismo punto bajo condiciones similares. En el certificado, para cada punto evaluado se realizaron hasta cinco observaciones consecutivas con intervalos aproximados de 10 segundos.
+
+La desviación estándar experimental permite analizar la dispersión de las mediciones. Si la desviación estándar es baja o igual a cero, las lecturas fueron altamente repetibles. Si la desviación estándar aumenta, indica mayor variabilidad entre las lecturas.
+
+La incertidumbre tipo A se obtiene mediante análisis estadístico de mediciones repetidas. Según NIST, cuando una cantidad se estima a partir de observaciones independientes realizadas bajo las mismas condiciones, la estimación suele corresponder a la media muestral y la incertidumbre estándar asociada puede evaluarse mediante la desviación estándar de la media.
+
+En el certificado se reporta que la incertidumbre tipo A fue evaluada a partir de la dispersión de las indicaciones registradas. También se aclara que no se calculó incertidumbre tipo B porque no se disponía de información externa suficiente, como certificados de calibración completos, incertidumbre declarada del patrón, resolución del monitor o especificaciones detalladas de los instrumentos.
 ## 2. Objetivos
 
 ### 2.1 Objetivo general
@@ -47,37 +144,6 @@ Operar el simulador **Pronk OxSim OX-1** y el monitor de signos vitales **uMEC 1
 
 ---
 
-## 3. Marco teórico
-
-### 3.1 Monitoreo de signos vitales
-
-El monitoreo de signos vitales permite evaluar el estado fisiológico de un paciente mediante la medición de variables como frecuencia cardíaca, presión arterial, saturación de oxígeno, frecuencia respiratoria y temperatura. En esta práctica se hizo énfasis en la frecuencia cardíaca, la saturación periférica de oxígeno y la frecuencia respiratoria.
-
-### 3.2 Frecuencia cardíaca
-
-La frecuencia cardíaca corresponde al número de latidos del corazón por minuto y se expresa en **BPM**. En adultos, una frecuencia cardíaca normal en reposo suele encontrarse aproximadamente entre 60 y 100 BPM.
-
-Valores por debajo de este rango pueden asociarse con **bradicardia**, mientras que valores por encima pueden asociarse con **taquicardia**.
-
-### 3.3 Saturación periférica de oxígeno
-
-La saturación periférica de oxígeno, **SpO₂**, indica el porcentaje de hemoglobina saturada con oxígeno en sangre periférica. En condiciones normales, un valor esperado suele estar entre 95 % y 100 %. Valores bajos pueden indicar hipoxemia o alteraciones en la oxigenación.
-
-### 3.4 Pulsioximetría
-
-La pulsioximetría es una técnica no invasiva que permite medir la saturación de oxígeno y la frecuencia cardíaca. Su funcionamiento se basa en la absorción diferencial de luz roja e infrarroja por parte de la hemoglobina oxigenada y desoxigenada.
-
-### 3.5 Señal fotopletismográfica
-
-La señal fotopletismográfica representa los cambios volumétricos de sangre en el tejido durante cada ciclo cardíaco. Esta señal permite estimar la frecuencia cardíaca y calcular la saturación de oxígeno. Su forma puede verse afectada por movimiento, mala perfusión, baja amplitud de pulso, ruido o mala colocación del sensor.
-
-### 3.6 Simulador Pronk OxSim OX-1
-
-El **Pronk OxSim OX-1** es un simulador de parámetros hemodinámicos utilizado para verificar el funcionamiento de monitores de signos vitales y sensores de pulsioximetría. Permite simular diferentes valores de frecuencia cardíaca y saturación de oxígeno, así como condiciones fisiológicas y patológicas.
-
-### 3.7 Monitor de signos vitales uMEC 100
-
-El **uMEC 100** es un monitor de signos vitales utilizado para visualizar variables fisiológicas del paciente. En esta práctica se empleó para registrar frecuencia cardíaca, saturación de oxígeno y frecuencia respiratoria frente a señales simuladas.
 
 ---
 
